@@ -66,3 +66,5 @@ class Persona:
 
 p1 = Persona("Javi", 22)
 p1.saludar()
+
+prueba
