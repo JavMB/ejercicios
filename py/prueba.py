@@ -1,7 +1,7 @@
 # =====================================
 # VARIABLES Y TIPOS (No se declara tipo explícito)
 # =====================================
-nombre = "Javi"
+nombre = "Javi" 
 edad = 22
 pi = 3.14
 activo = True
