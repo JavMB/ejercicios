@@ -1,7 +1,7 @@
 # =====================================
 # VARIABLES Y TIPOS (No se declara tipo explícito)
 # =====================================
-nombre = "Javi" 
+nombre = "Javi"
 edad = 22
 pi = 3.14
 activo = True
@@ -38,6 +38,7 @@ while contador < 3:
 def saludar(nombre):
     return f"Hola {nombre}!"
 
+
 print(saludar("Mundo"))
 
 
@@ -64,6 +65,6 @@ class Persona:
     def saludar(self):
         print(f"Soy {self.nombre} y tengo {self.edad} años.")
 
+
 p1 = Persona("Javi", 22)
 p1.saludar()
-
