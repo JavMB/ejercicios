@@ -1,15 +1,26 @@
 import threading
+import random
+import time
 
+def hilo1():
+    time.sleep(random.uniform(0, 1.5))
+    print("Soy el Hilo 1 y primero")
 
-def Hilo2():
-  print ('Soy el hilo 2\n')
-  t3 = threading.Thread(target=Hilo3)
-  t3.start()
+def hilo2():
+    time.sleep(random.uniform(0, 1.5))
+    print("Soy el hilo 2")
 
-def Hilo3():
-  print ('Soy el hilo 3  y último\n')
+def hilo3():
+    time.sleep(random.uniform(0, 1.5))
+    print("Soy el hilo 3 y último")
 
-t2 = threading.Thread(target=Hilo2)
-
-t2.start()
-print ("Soy el Hilo 1 y primero\n")
+if __name__ == "__main__":
+    t1 = threading.Thread(target=hilo1)
+    t2 = threading.Thread(target=hilo2)
+    t3 = threading.Thread(target=hilo3)
+    t1.start()
+    t2.start()
+    t3.start()
+    t1.join()
+    t2.join()
+    t3.join()
