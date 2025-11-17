@@ -1,0 +1,13 @@
+pytz~=2024.2
+uvicorn
+fastapi
+numpy
+pandas
+matplotlib
+seaborn
+requests
+bs4
+beautifulsoup4
+torch
+openai-whisper
+pyttsx3~=2.98
